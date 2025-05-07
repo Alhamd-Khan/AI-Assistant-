@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild AI Bot</title>
+    <link rel="icon" type="image/png" href="Wild_AI_Bot.png">
+    <link rel="shortcut icon" type="image/png" href="Wild_AI_Bot.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="Wild_AI_Bot.png" alt="Wild AI Bot Logo" class="bot-logo">
+                <h2>Wild AI Bot</h2>
+                <button id="new-chat" class="new-chat-btn">
+                    <i class="fas fa-plus"></i> New Chat
+                </button>
+            </div>
+            <div class="chat-list">
+                <!-- Chat history will be populated here -->
+            </div>
+            <div class="sidebar-footer">
+                <p>Created by Alhamd Khan</p>
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="main-content">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="current-chat-title" contenteditable="true">New Chat</div>
+                    <div class="chat-actions">
+                        <button id="theme-toggle" title="Toggle Theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button id="edit-title" title="Edit Title">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button id="delete-chat" title="Delete Chat">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="messages-container">
+                    <div class="ai-chat-box">
+                        <img src="Wild_AI_Bot.png" alt="" id="aiImage" width="10%">
+                        <div class="ai-chat-area">
+                            Hello! I'm Wild AI Bot, created by Alhamd Khan. How can I help you today?
+                        </div>
+                    </div>
+                </div>
+                <div class="prompt-area">
+                    <input type="text" id="prompt" placeholder="Message Wild AI Bot...">
+                    <button id="image" class="action-btn">
+                        <img src="img.svg" alt="Upload Image">
+                        <input type="file" accept="image/*" hidden>
+                    </button>
+                    <button id="submit" class="action-btn">
+                        <img src="submit.svg" alt="Send">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>
